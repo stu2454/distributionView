@@ -1,0 +1,7 @@
+services:
+  sim-dist-app:
+    build: .
+    ports:
+      - "8520:8501"
+    volumes:
+      - .:/app     # hot-reload during development
